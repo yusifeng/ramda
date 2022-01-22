@@ -121,15 +121,11 @@ To use directly in the browser:
 
 **0.25 及以后版本注意事项**
 
-<<<<<<< HEAD
 Ramda 在 0.25 以后，不会再提供默认输出（default export）。所以不要再用 `import R from 'ramda'`，而应该使用 `import * as R from 'ramda'` 引入 ramda。或者更好的方式是，通过 `import { functionName } from 'ramda'` 只引入必需的函数。
-=======
-**Note for ES6 module and browsers**
-In order to access to the ES6 module in browsers, one has to provide the content of  the __es__ directory (see below for the build instructions) and use `import * as R from './node_modules/ramda/es/index.js';`
 
 
-### Build
->>>>>>> us/master
+**ES6 模块和浏览器注意事项**
+为了在浏览器中访问 ES6 模块, 必须提供 __es__ 目录内容 (请参考下面的构建说明) 并使用 `import * as R from './node_modules/ramda/es/index.js';`
 
 ### Build (构建)
 
@@ -141,13 +137,10 @@ In order to access to the ES6 module in browsers, one has to provide the content
 
     npm run --silent partial-build compose reduce filter > dist/ramda.custom.js
 
-<<<<<<< HEAD
 上述命令需要安装 Node/io.js 和 ramda 的依赖（只需在部分构建开始前运行 `npm install`）。
-=======
-### Install specific functions
->>>>>>> us/master
+### 下载单个的函数
 
-[Install individual functions](https://bitsrc.io/ramda/ramda) with bit, npm and yarn without installing the whole library.
+通过 bit [下载单个的函数](https://bitsrc.io/ramda/ramda)，而不需要通过 npm 和 yarn 去下载整个库
 
 文档
 -------------
